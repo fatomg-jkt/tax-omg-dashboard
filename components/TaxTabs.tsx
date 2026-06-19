@@ -1,0 +1,2 @@
+import { taxMenus } from '@/utils/formatters'
+export default function TaxTabs({active,onChange}:{active:string;onChange:(v:string)=>void}){return <div className="flex gap-2 overflow-x-auto rounded-2xl bg-white p-2 shadow-sm">{taxMenus.map(m=><button key={m} onClick={()=>onChange(m)} className={`whitespace-nowrap rounded-xl px-4 py-2 text-sm font-semibold ${active===m?'bg-blue-600 text-white':'text-slate-600 hover:bg-slate-100'}`}>{m}</button>)}</div>}
