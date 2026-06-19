@@ -1,0 +1,1 @@
+export default function Header(){return <div className="rounded-3xl bg-gradient-to-r from-blue-700 via-sky-600 to-cyan-500 p-8 text-white shadow-xl"><p className="text-sm font-semibold uppercase tracking-[.35em] text-blue-100">Tax OMG Dashboard</p><h1 className="mt-3 text-4xl font-bold">Tax Coordinator</h1><p className="mt-2 text-lg text-blue-50">Dashboard Perpajakan</p></div>}

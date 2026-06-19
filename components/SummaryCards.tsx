@@ -1,0 +1,2 @@
+import { formatRupiah } from '@/utils/formatters'
+export default function SummaryCards({items}:{items:[string,number][]}){return <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">{items.map(([label,value],i)=><div key={label} className="card p-4"><p className="text-sm text-slate-500">{label}</p><p className="mt-2 text-2xl font-bold text-ink">{i<10?formatRupiah(value):value.toLocaleString('id-ID')}</p></div>)}</div>}
